@@ -1,0 +1,24 @@
+{
+    "common":{
+        "task": "train",
+        "num_classes":1,
+        "img_folder": "/mmfs1/scratch/jacks.local/mohsen.ahmadkhani/TopoSegNet/Tehran_Data/RGBs",
+        "gt_folder": "/mmfs1/scratch/jacks.local/mohsen.ahmadkhani/TopoSegNet/Tehran_Data/Masks",
+        "checkpoint_restore":""
+        },
+    "train":{
+        "learning_rate":0.0001,
+        "num_epochs":1000,
+        "save_every": 2000,
+        "train_datalist":"/mmfs1/scratch/jacks.local/mohsen.ahmadkhani/TopoSegNet/unet_fields/datalists/DRIVE/training_fields.csv",
+"validation_datalist":"/mmfs1/scratch/jacks.local/mohsen.ahmadkhani/TopoSegNet/unet_fields/datalists/DRIVE/validation_fields.csv",
+        "crop_size":200,
+        "train_batch_size":16,
+        "val_batch_size":16,
+        "output_folder":"/mmfs1/scratch/jacks.local/mohsen.ahmadkhani/TopoSegNet/unet_fields/train-log/fields_pth",
+        "output_suffix":"topoUnet",
+        "topo_weight":0.00001,
+        "topo_window":128
+    }
+}
+
