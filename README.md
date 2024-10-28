@@ -7,7 +7,7 @@
 Navigate to the root folder of the repository and run the following command:
 
 ```bash
-python -u main.py --params datalists/DRIVE/train_fields.json
+python -u main.py --params datalists/DRIVE/train.json
 ```
 
 
